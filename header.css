@@ -3,17 +3,18 @@ header {
     border: solid 1px;
     margin-top: 4px;
     background-image: url(cabecera.jpg);
-    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    align-items: center;
+   
 
 }
 
 .padre {
     display: flex;
-    justify-content:space-around
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
 
 }
 
@@ -24,15 +25,19 @@ header nav {
 }
 
 header h1 {
-    color: black;
-
+    color: white;
+    font-size: 5em;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-left: 20px;
 
 }
 
 .imgheader {
-    border: solid 1px;
+    border: solid 1px chocolate;
     justify-content: center;
     width: 220px;
+   
+
 }
+
