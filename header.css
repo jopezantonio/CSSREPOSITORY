@@ -1,0 +1,38 @@
+header {
+    background-color: aquamarine;
+    border: solid 1px;
+    margin-top: 4px;
+    background-image: url(cabecera.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+
+}
+
+.padre {
+    display: flex;
+    justify-content:space-around
+
+}
+
+
+header nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+header h1 {
+    color: black;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.imgheader {
+    border: solid 1px;
+    justify-content: center;
+    width: 220px;
+}
