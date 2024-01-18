@@ -1,13 +1,38 @@
 #menu {
     display: flex;
-    background-color: #333;
+    background-color: #333333;
     padding: 10px;
-    justify-content: center;   
+    justify-content: center;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
        
 }
 
+@media screen and (max-width: 768px) {
+    #menu {
+      flex-direction: column;
+      text-align: center;
+    }
+}
+
 #menu a {
-    color: rgb(130, 17, 17);
-    margin: 0 10px;
+    color: #ffffff;
+    margin: 5px 15px 5px 15px;
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    transition: color 1s, background-color 0.3s; /* Agrega transiciones suaves */
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #menu a {
+      flex-direction: column;
+      text-align: center;
+    }
+}
+
+#menu a:hover {
+    color: #333333; /* Cambia el color del texto al color del fondo al pasar el mouse */
+    background-color: #ffffff; /* Cambia el color de fondo al color del texto al pasar el mouse */
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
 
 }

@@ -1,43 +1,71 @@
 header {
-    background-color: aquamarine;
-    border: solid 1px;
+
     margin-top: 4px;
     background-image: url(cabecera.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   
 
 }
 
 .padre {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    
+    overflow: hidden;
 
 }
 
 
 header nav {
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+
 }
 
 header h1 {
+
     color: white;
-    font-size: 5em;
-    padding-bottom: 10px;
+    font-size: 5vw;
     padding-top: 10px;
     margin-left: 20px;
+    text-shadow: 2px 2px 4px #888888;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    color: #333333;
+
+
 
 }
 
 .imgheader {
-    border: solid 1px chocolate;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center;
     width: 220px;
-   
+    border-radius: 3px; /* Ajusta el valor según sea necesario para la curvatura de los bordes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 
+/*ESTE CODIGO ES PARA HACER EL HEADER RESPONSIVE SE HACE CON EL @MEDIA SCREEN*/
+@media screen and (max-width: 768px) {
+    .padre {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+   
+    .imgheader {
+      width: 30%;
+      margin-bottom: 5px;
+    }
+  }/*
+
+  /*@media screen and (max-width: 500px) {
+    header h1 {
+        margin-left: 0;
+        font-size: 30px;
+      }
+  }*/
